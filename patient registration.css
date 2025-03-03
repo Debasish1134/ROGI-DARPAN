@@ -1,0 +1,136 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('/images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: rgba(47, 34, 57, 0.9);
+    padding: 20px 0;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+/* Logo Styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    border-radius: 10%;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Form Container */
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin-top: 120px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgba(238, 238, 243, 0.8);
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #666;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Save Button */
+.save-btn {
+    background: #2b2c61;
+    color: white;
+}
+
+.save-btn:hover {
+    background: #8a2be2;
+}
+
+/* Face Scan Button */
+.face-scan-btn {
+    background: #322946;
+    color: white;
+    transition: transform 0.2s;
+}
+
+.face-scan-btn:hover {
+    background: #292649;
+    transform: scale(1.05);
+}
+
+/* Video Styling */
+video {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid #212037;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+    .header {
+        padding: 15px 0;
+    }
+    .logo {
+        width: 60px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}

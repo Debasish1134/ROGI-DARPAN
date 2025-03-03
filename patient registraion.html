@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rogi Darpan - Patient Home</title>
+    <link rel="stylesheet" href="/patient registration.css">
+</head>
+<body>
+    <!-- Header Section with Navbar -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="/images/logo.jpeg" alt="Rogi Darpan Logo" class="logo">
+            <h1>Rogi Darpan</h1>
+        </div>
+    </header>
+    <div class="container">
+        <form id="patientForm">
+            <h2>Patient Registration</h2>
+            <div class="info-group">
+                <input type="text" id="patient-name" placeholder="Enter your name" required>
+            </div>
+            <div class="info-group">
+                <input type="text" id="blood-group" placeholder="Enter blood group" required>
+            </div>
+            <div class="info-group">
+                <input type="number" id="age" placeholder="Enter your age" required>
+            </div>
+            <div class="info-group">
+                <input type="tel" id="contact" placeholder="Enter phone number" required>
+            </div>
+            <div class="info-group">
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="info-group">
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <!-- Face Scan as an Optional Method -->
+            <div class="face-scan-group">
+                <button type="button" id="faceScanBtn" class="face-scan-btn">Face Scan & Enroll</button>
+                <video id="video" autoplay style="display: none;"></video>
+                <canvas id="canvas" style="display: none;"></canvas>
+            </div>
+            <button type="submit" class="save-btn">Register</button>
+        </form>
+    </div>
+    <script src="/patient registration.js"></script>
+</body>
+</html>

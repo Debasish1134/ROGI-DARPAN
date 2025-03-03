@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rogi Darpan - Forgot Password</title>
+    <link rel="stylesheet" href="forgetpw.css">
+</head>
+<body>
+    <div class="forget-password-container">
+        <div class="forget-password-box">
+            <header>
+                <img src="/images/logo.jpeg" alt="Rogi Darpan Logo" class="logo">
+                <h1>Rogi Darpan</h1>
+            </header>
+            <h2>Forgot Your Password?</h2>
+            <p>Enter your phone number to receive an OTP.</p>
+            <form class="forget-password-form" id="phoneForm">
+                <div class="input-group">
+                    <input type="tel" id="phoneNumber" placeholder="Phone Number" required pattern="[0-9]{10}">
+                </div>
+                <div class="input-group">
+                    <button type="button" id="sendOtpBtn" class="reset-btn" onclick="sendOtp()">Send OTP</button>
+                </div>
+            </form>
+
+            <div id="otpGroup" class="otp-group" style="display: none;">
+                <p>Enter OTP</p>
+                <form class="verify-otp-form" id="otpForm">
+                    <div class="input-group">
+                        <input type="text" id="otp" placeholder="Enter OTP" required maxlength="6">
+                    </div>
+                    <div class="input-group">
+                        <button type="button" id="verifyOtpBtn" class="reset-btn" onclick="verifyOtp()">Verify OTP</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="extra-options">
+                <a href="/doctorlogin.html" class="welcome-btn">i am a doctor</a><br>
+                <a href="/patientlogin.html" class="welcome-btn">i am a patient</a>
+
+            </div>
+        </div>
+    </div>
+    <script src="/forgetpw.js"></script>
+</body>
+</html>

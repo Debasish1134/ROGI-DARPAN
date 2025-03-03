@@ -1,0 +1,108 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('/images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: floatBackground 10s infinite alternate ease-in-out;
+}
+
+/* Floating background animation */
+@keyframes floatBackground {
+    0% {
+        background-position: center center;
+        transform: translateY(0px);
+    }
+    50% {
+        background-position: center top;
+        transform: translateY(-10px);
+    }
+    100% {
+        background-position: center center;
+        transform: translateY(0px);
+    }
+}
+
+/* Home container */
+.home-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+/* Content */
+.content h2 {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.role-selection {
+    display: flex;
+    justify-content: space-around;
+}
+
+.role {
+    width: 45%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.role h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.role p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.role-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #6A5ACD;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.role-button:hover {
+    background-color: #483D8B;
+}

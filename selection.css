@@ -1,0 +1,95 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('/images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Container Styling */
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 600px;
+}
+
+/* Logo and Title */
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #6A5ACD;
+}
+
+/* Selection Section */
+.selection h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.role-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.role-card {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 10px;
+    width: 45%;
+    height: 220px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.role-image {
+    width: 80px;
+    height: 20px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #6A5ACD;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #6A5ACD;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #483D8B;
+}

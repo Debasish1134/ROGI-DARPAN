@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition - Patient Details</title>
+    <link rel="stylesheet" href="facerecognition.css">
+    <script src="https://docs.opencv.org/4.x/opencv.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rogi Darpan - Face Recognition</h1>
+        </header>
+
+        <div class="video-container">
+            <video id="videoInput" autoplay playsinline></video>
+            <canvas id="canvasOutput"></canvas>
+            <button id="captureBtn">Scan Face</button>
+        </div>
+
+        <div class="patient-details" id="patientDetails">
+            <h2>Patient Details</h2>
+            <img id="patientImage" src="" alt="Patient Image">
+            <p><strong>Name:</strong> <span id="patientName">-</span></p>
+            <p><strong>Age:</strong> <span id="patientAge">-</span></p>
+            <p><strong>Blood Group:</strong> <span id="patientBlood">-</span></p>
+            <p><strong>Emergency Contact:</strong> <span id="patientContact">-</span></p>
+        </div>
+    </div>
+    <script src="facerecognition.js"></script>
+</body>
+</html>

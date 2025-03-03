@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(images/bg.jpg);
+    margin: 0;
+    padding: 0;
+    background-color: #2b2b47;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade-in effect for the entire page */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Floating Background Effect */
+.floating-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/bg.jpg'); /* Your background image */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    animation: floatBackground 6s ease-in-out infinite alternate;
+}
+/* Floating Animation */
+@keyframes floatBackground {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(20px); }
+}
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2b3f;
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+/* Navbar hover effect */
+.navbar:hover {
+    background-color: #46416e;
+    transform: translateY(-3px);
+}
+
+/* Navbar Links */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(166, 164, 191);
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Navbar link hover effect */
+.navbar ul li a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+/* Mission Section Styles */
+.mission-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #373b5f;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    animation: slideUp 1s ease-in-out;
+}
+/* Smooth show/hide animation */
+.hidden {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.visible {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Button Animation */
+#toggle-btn {
+    background-color: #6A5ACD;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Button hover effect */
+#toggle-btn:hover {
+    background-color: #483D8B;
+    transform: scale(1.05);
+}
+/* Slide up effect */
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.mission-section h1 {
+    font-size: 2.5em;
+    color: #f5f5f5;
+    margin-bottom: 20px;
+    animation: fadeInText 1.5s ease-in-out;
+}
+
+/* Fade in text animation */
+@keyframes fadeInText {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.mission-section p {
+    font-size: 1.2em;
+    color: #ddd;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Button Animation */
+#learn-more-btn {
+    background-color: #6A5ACD;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Button hover effect */
+#learn-more-btn:hover {
+    background-color: #483D8B;
+    transform: scale(1.1);
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #2b283f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    animation: slideUp 1s ease-in-out;
+}
+
+.footer-content a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+    color: #d1d1d1;
+}

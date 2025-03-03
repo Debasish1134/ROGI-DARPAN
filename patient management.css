@@ -1,0 +1,71 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: url('/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 80%;
+    max-width: 900px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    width: 80px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #6A5ACD;
+}
+
+/* Dashboard Section */
+.dashboard-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Information Card Styling */
+.info-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.info-card h2 {
+    color: #6A5ACD;
+    margin-bottom: 15px;
+}
+
+.info-card .patient-count,
+.info-card .appointment-count,
+.info-card .total-patients {
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
+}

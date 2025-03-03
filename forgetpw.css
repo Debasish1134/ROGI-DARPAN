@@ -1,0 +1,118 @@
+/* Reset and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+/* Forget password container */
+.forget-password-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Header logo and heading */
+header {
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+p {
+    font-size: 15px;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* Form styling */
+.forget-password-form {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+input[type="tel"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #6A5ACD;
+}
+
+.reset-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background-color: #6A5ACD;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+    background-color: #483D8B;
+}
+
+/* OTP Form Styling */
+.otp-group {
+    margin-top: 20px;
+}
+
+/* Extra options */
+.extra-options {
+    margin-top: 15px;
+}
+
+.extra-options a {
+    color: #6A5ACD;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.extra-options a:hover {
+    color: #483D8B;
+}

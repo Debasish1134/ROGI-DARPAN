@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Doctor Registration</h2>
+        <form id="doctorForm">
+            <input type="text" id="doctor-name" placeholder="Enter your name" required>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <input type="text" id="specialization" placeholder="Enter specialization" required>
+            <input type="text" id="blood-group" placeholder="Enter blood group">
+            <input type="number" id="age" placeholder="Enter your age">
+            <input type="tel" id="contact" placeholder="Enter phone number" required>
+            <input type="number" id="experience" placeholder="Enter years of experience">
+            <input type="text" id="location" placeholder="Enter location">
+            
+            <!-- Face scanning section -->
+            <h3>Face Scan</h3>
+            <video id="webcam" autoplay playsinline></video>
+            <button type="button" id="captureFace">Capture Face</button>
+            <canvas id="faceCanvas" style="display:none;"></canvas>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script src="doctor_registration.js"></script>
+</body>
+</html>

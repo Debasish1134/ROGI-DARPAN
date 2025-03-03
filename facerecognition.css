@@ -1,0 +1,115 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: url('/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    margin-bottom: 20px;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    width: 70px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #6A5ACD;
+}
+
+/* Face Scan Section */
+.face-scan-section {
+    margin-top: 20px;
+}
+
+.video-container {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    aspect-ratio: 4 / 3; /* Maintain aspect ratio for responsiveness */
+    border: 2px solid #6A5ACD;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #6A5ACD;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #483D8B;
+}
+
+#canvasOutput {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#scan-status {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .video-container {
+        width: 100%;
+        height: auto;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .video-container {
+        width: 100%;
+    }
+}

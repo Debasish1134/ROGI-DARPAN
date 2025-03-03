@@ -1,0 +1,144 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    background-image:url(images/bg.jpg) ;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c9a9e2;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(19, 18, 18, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #6d56b3;
+}
+
+/* Section Title */
+.section-title {
+    font-size:52px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4c4c4c;
+}
+
+/* Content */
+.content {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.content p {
+    font-size:35px;
+    color: #555;
+}
+
+/* Records Table */
+.records-table {
+    overflow-x: auto; /* Ensures table is scrollable on smaller screens */
+    margin-top: 20px;
+}
+
+.records-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.records-table th,
+.records-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.records-table th {
+    background-color: #c9a9e2;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.records-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.records-table a {
+    color: #6d56b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.records-table a:hover {
+    text-decoration: underline;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(90deg, #6d56b3, #a689d9);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: linear-gradient(90deg, #7e63c6, #b58de6);
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 24px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .back-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
